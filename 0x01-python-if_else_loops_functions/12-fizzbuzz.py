@@ -11,4 +11,4 @@ def fizzbuzz():
             print("Buzz ", end ="")
         else:
             print(f"{A} ", end ="")
-    print("Buzz ")
+    print("Buzz ", end="")
