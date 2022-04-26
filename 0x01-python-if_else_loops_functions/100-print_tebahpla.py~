@@ -1,0 +1,10 @@
+#!/usr/bin/python3
+
+A = 122
+mod = 32
+while i >= 65:
+    print("{:c}", .format(A))
+    if A == 65:
+        break
+    i -= mod
+    mod *= -1
