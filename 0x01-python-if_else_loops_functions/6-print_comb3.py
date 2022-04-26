@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 a = 0
 b = 1
 
@@ -8,4 +9,4 @@ while a < 8:
         b = a + 1
     else:
         b += 1
-print(89)
+print("89")
