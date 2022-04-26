@@ -2,9 +2,9 @@
 def fizzbuzz():
 
     for A in range(1, 101):
-        if (A % 15) == 0:
+        if A % 15 == 0:
             print("FizzBuzz ", end="")
-        elif (A % 3) == 0:
+        elif A % 3 == 0:
             print("Fizz ", end="")
         elif A % 5 == 0:
             print("Buzz ", end="")
