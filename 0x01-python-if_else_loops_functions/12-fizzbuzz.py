@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
-for A in range (0, 99):
+for A in range (1, 100):
     if (A % 15) == 0:
         print("FizzBuzz ", end="")
-    elif (A / 10 + A % 10) % 3 == 0:
+    elif (A % 3) == 0:
         print("Fizz ", end="")
     elif A % 10 == 5 or A % 10 == 0:
         print("Buzz ", end ="")
