@@ -1,6 +1,5 @@
-#!/usr/bin/python3
-
-a = 0, b = 1
+a = 0
+b = 1
 
 while a < 8:
     print("{}{}".format(a, b), end=", ")
