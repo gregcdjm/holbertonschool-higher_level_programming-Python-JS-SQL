@@ -9,4 +9,4 @@ for A in range (1, 100):
         print("Buzz ", end ="")
     else:
         print(f"{A} ", end ="")
-print("Buzz")
+print("Buzz ")
