@@ -6,7 +6,7 @@ def fizzbuzz():
             print("FizzBuzz ", end="")
         elif (A % 3) == 0:
             print("Fizz ", end="")
-        elif A % 10 == 5 or A % 10 == 0:
+        elif A % 10 == 5:
             print("Buzz ", end="")
         else:
             print(f"{A} ", end="")
