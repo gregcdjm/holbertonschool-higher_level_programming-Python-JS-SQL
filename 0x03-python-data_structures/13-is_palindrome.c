@@ -9,15 +9,13 @@
 int is_palindrome(listint_t **head)
 {
 	int i = 0, j = 0, k;
-	listint_t **tmp = head, **tmp2 = head;
-	listint_t *tmpD1 = *tmp, *tmpD2 = *tmp2;
-	listint_t *headD = *head;
+	listint_t *tmp = *head, *tmp2 = *head;
 
 	if (*head != NULL || (*head)->next != NULL)
 	{
-		while (tmpD1->next->next)
+		while (tmp->next->next)
 		{
-			tmpD1 = tmpD1->next;
+			tmp = tmp->next;
 			i++;
 		}
 		k = i / 2;
@@ -25,16 +23,16 @@ int is_palindrome(listint_t **head)
 			j--;
 		for (; j < k + 1; j++)
 		{
-			tmpD1 = headD;
+			tmp = *head;
 			for (i = k * 2; i - j != 0; i--)
 			{
-				tmpD1 = tmpD1->next;
+				tmp = tmp->next;
 			}
-			if (tmpD1->next->n != tmpD2->n )
+			if (tmp->next->n != tmp2->n )
 			{
 				return (0);
 			}
-			tmpD2 = tmpD2->next;
+			tmp2 = tmp2->next;
 		}
 	}
 	return (1);
