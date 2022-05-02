@@ -2,8 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * check_palind - function that check if the list is a palindrome
+ * is_palindrome - function that check if the list is a palindrome
  * @head: the list to check
+ * Return: 0 or 1
  */
 int is_palindrome(listint_t **head)
 {
