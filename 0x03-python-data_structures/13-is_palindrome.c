@@ -12,30 +12,27 @@ int is_palindrome(listint_t **head)
 	listint_t *tmp = *head, *tmp2 = *head;
 
 	if (*head == NULL || (*head)->next == NULL)
-	{
 		return (1);
+	while (tmp->next->next)
+	{
+		tmp = tmp->next;
+		i++;
 	}
-		while (tmp->next->next)
+	k = i / 2;
+	if (i % 2 != 0)
+		j--;
+	for (; j < k + 1; j++)
+	{
+		tmp = *head;
+		for (i = k * 2; i - j != 0; i--)
 		{
 			tmp = tmp->next;
-			i++;
 		}
-		k = i / 2;
-		if (i % 2 != 0)
-			j--;
-		for (; j < k + 1; j++)
+		if (tmp->next->n != tmp2->n )
 		{
-			tmp = *head;
-			for (i = k * 2; i - j != 0; i--)
-			{
-				tmp = tmp->next;
+			return (0);
 			}
-			if (tmp->next->n != tmp2->n )
-			{
-				return (0);
-			}
-			tmp2 = tmp2->next;
-		}
+		tmp2 = tmp2->next;
 	}
 	return (1);
 }
