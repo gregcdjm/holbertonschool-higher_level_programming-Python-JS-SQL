@@ -12,7 +12,6 @@ int main(void)
     listint_t *head;
 
     head = NULL;
-
     print_listint(head);
 
     if (is_palindrome(&head) == 1)
