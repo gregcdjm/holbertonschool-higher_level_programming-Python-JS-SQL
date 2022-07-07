@@ -1,4 +1,3 @@
-----blabla
--- script that lists all records with a score >= 1
+-- script that lists all rec
 DELETE FROM second_table
 WHERE score <= 5;
