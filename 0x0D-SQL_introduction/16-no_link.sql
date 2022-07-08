@@ -1,4 +1,4 @@
-----jc,c,cc,c,c c,c,c c,c,c
+-- script that lists all records of the tabl
 SELECT score, name
 FROM second_table
 WHERE name IS NOT NULL
