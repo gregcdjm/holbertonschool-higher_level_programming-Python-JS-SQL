@@ -1,0 +1,5 @@
+----jc,c,cc,c,c c,c,c c,c,c
+SELECT score, name
+FROM second_table
+WHERE name IS NOT NULL
+ORDER BY score DESC;
