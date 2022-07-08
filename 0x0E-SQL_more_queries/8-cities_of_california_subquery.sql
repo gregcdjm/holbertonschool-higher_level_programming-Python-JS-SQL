@@ -1,5 +1,5 @@
 -- ok bla bla
 SELECT id, name
 FROM states
-WHERE name = California
+WHERE state_id = 1
 ORDER BY id ASC;
