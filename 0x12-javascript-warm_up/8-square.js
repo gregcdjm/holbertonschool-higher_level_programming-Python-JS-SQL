@@ -6,7 +6,7 @@ let x;
 
 if (isNaN(gang)) {
   console.log('Missing size');
-} else
+} else {
   for (x = 0; x < gang; x++) {
     console.log('X'.repeat(gang));
   }
