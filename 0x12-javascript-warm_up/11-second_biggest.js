@@ -1,18 +1,25 @@
 #!/usr/bin/node
 
 const entry = process.argv;
+const toOrder = [];
 let check;
-let big = 0;
-let secondbig = 0;
 
-for (let i = 2; i < entry.length; i++) {
+function secBig () {
+  const x = toOrder.length;
+  toOrder.sort(function (a, b) { return a - b; });
+  console.log(toOrder[x - 2]);
+}
+
+if (entry.length <= 3) {
+  console.log(0);
+} else {
+  for (let i = 2; i < entry.length; i++) {
     check = parseInt(entry[i]);
     if (isNaN(check)) {
-	continue;
+      continue;
+    } else {
+      toOrder.push(check);
     }
-    if (check >= big) {
-	    secondbig = big;
-	    big = check;
-    }
+  }
+  secBig();
 }
-console.log(secondbig);
