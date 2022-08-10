@@ -1,3 +1,3 @@
 #!/usr/bin/node
 const there = process.argv;
-console.log(entry[2], 'is', entry[3]);
+console.log(there[2], 'is', there[3]);
