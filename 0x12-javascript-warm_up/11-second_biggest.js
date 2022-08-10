@@ -9,11 +9,10 @@ for (let i = 2; i < entry.length; i++) {
     check = parseInt(entry[i]);
     if (isNaN(check)) {
 	continue;
-    } else {
-	if (check >= big) {
+    }
+    if (check >= big) {
 	    secondbig = big;
 	    big = check;
-	}
     }
 }
 console.log(secondbig);
