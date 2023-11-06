@@ -1,1 +1,1 @@
-ok
+Exercice python execption holberton
